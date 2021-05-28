@@ -1,12 +1,8 @@
-*, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
     background-color: #222;
-    overflow: hidden;
+    overflow: hidden; /*pour eviter que le scroll apparaissent*/
 }
 
 .container{
@@ -15,7 +11,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.btn-confettis{
+.bouton-milieu{
     width: 100px;
     height: 100px;
     position: absolute;
@@ -32,7 +28,8 @@ body{
     font-size: 30px;
 
 }
-.btn-confettis:active{
+/*comme on a l'impressions qu'on appuie vraiment sur un bouton*/
+.bouton-milieu:active{
     margin-top: 7px;
     box-shadow: 0 0px 0 rgb(160, 160, 160);
 }
